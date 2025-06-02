@@ -1,4 +1,4 @@
-from django import template
+from django import template 
 register = template.Library()
 from django.utils.translation import get_language
 from django.conf import settings
@@ -15,4 +15,6 @@ def get_title(language):
     for code,title in settings.LANGUAGES:
         if code == language:
             return title
-    return None
+        return None
+    
+
