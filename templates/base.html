@@ -248,11 +248,8 @@ Author: Webstrot
                                         <li><a href="{% url 'author' %}">{% trans "Author" %}</a>
                                         </li>
                                         <li>
-                                            {% if user.is_authenticated %}
-                                                <a href="{% url 'profile' %}">Profile</a>
-                                            {% else %}
-                                                <a href="{% url 'login' %}">{% trans "Login" %}</a>
-                                            {% endif %}
+                                        <li><a href="{% url 'login' %}">{% trans "Login" %}</a>
+                                        </li>
                                         </li>
                                         <li><a href="{% url 'register' %}">{% trans "Register" %}</a>
                                         </li>

@@ -11,7 +11,7 @@
   <div class="container">
     <div class="ne_ts_inner_wrapper">
       <div class="ne_tran_label_wrapper">
-        <h3>Trending</h3>
+        <h3>{% trans 'Trending' %}</h3>
       </div>
       <div class="ne_tranding_slider_wrapper">
         <div class="owl-carousel owl-theme">
@@ -45,7 +45,7 @@
                                         <div class="row"> 
                                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hot_slider_custom_col_img_cont"> 
                                                 <div class="content lr_banner_content_inner_wrapper"> 
-                                                    <h2 data-animation="animated bounceInLeft">Top news</h2> 
+                                                    <h2 data-animation="animated bounceInLeft">{% trans 'Top news' %}</h2> 
                                                     <h3 data-animation="animated fadeInLeft">{{ b.title }}</h3> 
                                                     <ul> 
                                                         <li data-animation="animated fadeInLeft"><a href="#"><i class="fa fa-calendar"></i> &nbsp;{{ b.datatime }}</a> 
@@ -88,7 +88,7 @@
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <div class="ne_recent_tabs_main_wrapper">
                                     <div class="ne_recent_heading_main_wrapper">
-                                        <h2>Recent news</h2>
+                                        <h2>{% trans 'Recent news' %}</h2>
                                     </div>
                                     <ul class="nav nav-tabs ne_recent_tabs" role="tablist">
                                         <li role="presentation"><a href="#hot" aria-controls="hot" role="tab" data-toggle="tab">politics</a>
@@ -107,7 +107,7 @@
                                                             <div class="ne_re_left_top_main_wrapper">
                                                                 <div class="ne_re_left_img_main_wrapper">
                                                                     <img src="{% static 'images/content/r1.jpg' %}" alt="img">
-                                                                    <h2>Bussiness</h2>
+                                                                    <h2>{% trans 'Bussiness' %}</h2>
                                                                 </div>
                                                                 <div class="ne_re_left_img_cont_main_wrapper">
                                                                     <h3><a href="#">Award of the year</a></h3>
@@ -132,7 +132,7 @@
                                                             <div class="ne_re_left_top_main_wrapper">
                                                                 <div class="ne_re_left_img_main_wrapper ne_re_left_img_main_wrapper2">
                                                                     <img src="{% static 'images/content/r2.jpg' %}" alt="img">
-                                                                    <h2>Sport</h2>
+                                                                    <h2>{% trans 'Sport' %}</h2>
                                                                 </div>
                                                                 <div class="ne_re_left_img_cont_main_wrapper">
                                                                     <h3><a href="#">The clock is ticking </a></h3>
@@ -161,7 +161,116 @@
                                                             <div class="ne_re_left_top_main_wrapper">
                                                                 <div class="ne_re_left_img_main_wrapper">
                                                                     <img src="{% static 'images/content/r1.jpg' %}" alt="img">
-                                                                    <h2>Bussiness</h2>
+                                                                    <h2>{% trans 'Bussiness' %}</h2>
+                                                                </div>
+                                                                <div class="ne_re_left_img_cont_main_wrapper">
+                                                                    <h3><a href="#">{% trans 'Award of the year' %}</a></h3>
+                                                                    <ul class="ne_re_social1_wrapper">
+                                                                        <li data-animation="animated fadeInLeft"><a href="#"><i class="fa fa-calendar"></i> &nbsp;25 OCT, 2022</a>
+                                                                        </li>
+                                                                        <li data-animation="animated fadeInLeft"><a href="#"><i class="fa fa-clock-o"></i> &nbsp;07 : 00 am</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                    <p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+                                                                    <ul class="ne_re_social2_wrapper">
+                                                                        <li data-animation="animated fadeInLeft"><a href="#"><i class="fa fa-thumbs-up"></i> &nbsp;5124 Like</a>
+                                                                        </li>
+                                                                        <li data-animation="animated fadeInLeft"><a href="#"><i class="fa fa-comments"></i> &nbsp;645 Comments</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                          
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                            <div class="ne_re_left_top_main_wrapper">
+                                                                <div class="ne_re_left_img_main_wrapper ne_re_left_img_main_wrapper2">
+                                                                    <img src="{% static 'images/content/r2.jpg' %}" alt="img">
+                                                                    <h2>{% trans 'Sport' %}</h2>
+                                                                </div>
+                                                                <div class="ne_re_left_img_cont_main_wrapper">
+                                                                    <h3><a href="#">The clock is ticking </a></h3>
+                                                                    <ul class="ne_re_social1_wrapper">
+                                                                        <li data-animation="animated fadeInLeft"><a href="#"><i class="fa fa-calendar"></i> &nbsp;25 OCT, 2022</a>
+                                                                        </li>
+                                                                        <li data-animation="animated fadeInLeft"><a href="#"><i class="fa fa-clock-o"></i> &nbsp;07 : 00 am</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                    <p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+                                                                    <ul class="ne_re_social2_wrapper">
+                                                                        <li data-animation="animated fadeInLeft"><a href="#"><i class="fa fa-thumbs-up"></i> &nbsp;5124 Like</a>
+                                                                        </li>
+                                                                        <li data-animation="animated fadeInLeft"><a href="#"><i class="fa fa-comments"></i> &nbsp;645 Comments</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                           
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="row">
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                            <div class="ne_re_left_top_main_wrapper">
+                                                                <div class="ne_re_left_img_main_wrapper">
+                                                                    <img src="{% static 'images/content/r1.jpg' %}" alt="img">
+                                                                    <h2>{% trans 'Sport' %}</h2>
+                                                                </div>
+                                                                <div class="ne_re_left_img_cont_main_wrapper">
+                                                                    <h3><a href="#">Award of the year</a></h3>
+                                                                    <ul class="ne_re_social1_wrapper">
+                                                                        <li data-animation="animated fadeInLeft"><a href="#"><i class="fa fa-calendar"></i> &nbsp;25 OCT, 2022</a>
+                                                                        </li>
+                                                                        <li data-animation="animated fadeInLeft"><a href="#"><i class="fa fa-clock-o"></i> &nbsp;07 : 00 am</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                    <p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+                                                                    <ul class="ne_re_social2_wrapper">
+                                                                        <li data-animation="animated fadeInLeft"><a href="#"><i class="fa fa-thumbs-up"></i> &nbsp;5124 Like</a>
+                                                                        </li>
+                                                                        <li data-animation="animated fadeInLeft"><a href="#"><i class="fa fa-comments"></i> &nbsp;645 Comments</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                            <div class="ne_re_left_top_main_wrapper">
+                                                                <div class="ne_re_left_img_main_wrapper ne_re_left_img_main_wrapper2">
+                                                                    <img src="{% static 'images/content/r2.jpg' %}" alt="img">
+                                                                    <h2>{% trans 'Sport' %}</h2>
+                                                                </div>
+                                                                <div class="ne_re_left_img_cont_main_wrapper">
+                                                                    <h3><a href="#">{% trans 'The clock is ticking' %} </a></h3>
+                                                                    <ul class="ne_re_social1_wrapper">
+                                                                        <li data-animation="animated fadeInLeft"><a href="#"><i class="fa fa-calendar"></i> &nbsp;25 OCT, 2022</a>
+                                                                        </li>
+                                                                        <li data-animation="animated fadeInLeft"><a href="#"><i class="fa fa-clock-o"></i> &nbsp;07 : 00 am</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                    <p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+                                                                    <ul class="ne_re_social2_wrapper">
+                                                                        <li data-animation="animated fadeInLeft"><a href="#"><i class="fa fa-thumbs-up"></i> &nbsp;5124 Like</a>
+                                                                        </li>
+                                                                        <li data-animation="animated fadeInLeft"><a href="#"><i class="fa fa-comments"></i> &nbsp;645 Comments</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="row">
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                            <div class="ne_re_left_top_main_wrapper">
+                                                                <div class="ne_re_left_img_main_wrapper">
+                                                                    <img src="{% static 'images/content/r1.jpg' %}" alt="img">
+                                                                    <h2>{% trans 'Sport' %}</h2>
                                                                 </div>
                                                                 <div class="ne_re_left_img_cont_main_wrapper">
                                                                     <h3><a href="#">Award of the year</a></h3>
@@ -186,62 +295,7 @@
                                                             <div class="ne_re_left_top_main_wrapper">
                                                                 <div class="ne_re_left_img_main_wrapper ne_re_left_img_main_wrapper2">
                                                                     <img src="{% static 'images/content/r2.jpg' %}" alt="img">
-                                                                    <h2>Sport</h2>
-                                                                </div>
-                                                                <div class="ne_re_left_img_cont_main_wrapper">
-                                                                    <h3><a href="#">The clock is ticking </a></h3>
-                                                                    <ul class="ne_re_social1_wrapper">
-                                                                        <li data-animation="animated fadeInLeft"><a href="#"><i class="fa fa-calendar"></i> &nbsp;25 OCT, 2022</a>
-                                                                        </li>
-                                                                        <li data-animation="animated fadeInLeft"><a href="#"><i class="fa fa-clock-o"></i> &nbsp;07 : 00 am</a>
-                                                                        </li>
-                                                                    </ul>
-                                                                    <p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-                                                                    <ul class="ne_re_social2_wrapper">
-                                                                        <li data-animation="animated fadeInLeft"><a href="#"><i class="fa fa-thumbs-up"></i> &nbsp;5124 Like</a>
-                                                                        </li>
-                                                                        <li data-animation="animated fadeInLeft"><a href="#"><i class="fa fa-comments"></i> &nbsp;645 Comments</a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                           
-                                                            
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="item">
-                                                    <div class="row">
-                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                                            <div class="ne_re_left_top_main_wrapper">
-                                                                <div class="ne_re_left_img_main_wrapper">
-                                                                    <img src="{% static 'images/content/r1.jpg' %}" alt="img">
-                                                                    <h2>Sport</h2>
-                                                                </div>
-                                                                <div class="ne_re_left_img_cont_main_wrapper">
-                                                                    <h3><a href="#">Award of the year</a></h3>
-                                                                    <ul class="ne_re_social1_wrapper">
-                                                                        <li data-animation="animated fadeInLeft"><a href="#"><i class="fa fa-calendar"></i> &nbsp;25 OCT, 2022</a>
-                                                                        </li>
-                                                                        <li data-animation="animated fadeInLeft"><a href="#"><i class="fa fa-clock-o"></i> &nbsp;07 : 00 am</a>
-                                                                        </li>
-                                                                    </ul>
-                                                                    <p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-                                                                    <ul class="ne_re_social2_wrapper">
-                                                                        <li data-animation="animated fadeInLeft"><a href="#"><i class="fa fa-thumbs-up"></i> &nbsp;5124 Like</a>
-                                                                        </li>
-                                                                        <li data-animation="animated fadeInLeft"><a href="#"><i class="fa fa-comments"></i> &nbsp;645 Comments</a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                            
-                                                        </div>
-                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                                            <div class="ne_re_left_top_main_wrapper">
-                                                                <div class="ne_re_left_img_main_wrapper ne_re_left_img_main_wrapper2">
-                                                                    <img src="{% static 'images/content/r2.jpg' %}" alt="img">
-                                                                    <h2>Sport</h2>
+                                                                    <h2>{% trans 'Sport' %}</h2>
                                                                 </div>
                                                                 <div class="ne_re_left_img_cont_main_wrapper">
                                                                     <h3><a href="#">The clock is ticking </a></h3>
@@ -270,61 +324,7 @@
                                                             <div class="ne_re_left_top_main_wrapper">
                                                                 <div class="ne_re_left_img_main_wrapper">
                                                                     <img src="{% static 'images/content/r1.jpg' %}" alt="img">
-                                                                    <h2>Sport</h2>
-                                                                </div>
-                                                                <div class="ne_re_left_img_cont_main_wrapper">
-                                                                    <h3><a href="#">Award of the year</a></h3>
-                                                                    <ul class="ne_re_social1_wrapper">
-                                                                        <li data-animation="animated fadeInLeft"><a href="#"><i class="fa fa-calendar"></i> &nbsp;25 OCT, 2022</a>
-                                                                        </li>
-                                                                        <li data-animation="animated fadeInLeft"><a href="#"><i class="fa fa-clock-o"></i> &nbsp;07 : 00 am</a>
-                                                                        </li>
-                                                                    </ul>
-                                                                    <p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-                                                                    <ul class="ne_re_social2_wrapper">
-                                                                        <li data-animation="animated fadeInLeft"><a href="#"><i class="fa fa-thumbs-up"></i> &nbsp;5124 Like</a>
-                                                                        </li>
-                                                                        <li data-animation="animated fadeInLeft"><a href="#"><i class="fa fa-comments"></i> &nbsp;645 Comments</a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                          
-                                                        </div>
-                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                                            <div class="ne_re_left_top_main_wrapper">
-                                                                <div class="ne_re_left_img_main_wrapper ne_re_left_img_main_wrapper2">
-                                                                    <img src="{% static 'images/content/r2.jpg' %}" alt="img">
-                                                                    <h2>Sport</h2>
-                                                                </div>
-                                                                <div class="ne_re_left_img_cont_main_wrapper">
-                                                                    <h3><a href="#">The clock is ticking </a></h3>
-                                                                    <ul class="ne_re_social1_wrapper">
-                                                                        <li data-animation="animated fadeInLeft"><a href="#"><i class="fa fa-calendar"></i> &nbsp;25 OCT, 2022</a>
-                                                                        </li>
-                                                                        <li data-animation="animated fadeInLeft"><a href="#"><i class="fa fa-clock-o"></i> &nbsp;07 : 00 am</a>
-                                                                        </li>
-                                                                    </ul>
-                                                                    <p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-                                                                    <ul class="ne_re_social2_wrapper">
-                                                                        <li data-animation="animated fadeInLeft"><a href="#"><i class="fa fa-thumbs-up"></i> &nbsp;5124 Like</a>
-                                                                        </li>
-                                                                        <li data-animation="animated fadeInLeft"><a href="#"><i class="fa fa-comments"></i> &nbsp;645 Comments</a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                           
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="item">
-                                                    <div class="row">
-                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                                            <div class="ne_re_left_top_main_wrapper">
-                                                                <div class="ne_re_left_img_main_wrapper">
-                                                                    <img src="{% static 'images/content/r1.jpg' %}" alt="img">
-                                                                    <h2>Sport</h2>
+                                                                    <h2>{% trans 'Sport' %}</h2>
                                                                 </div>
                                                                 <div class="ne_re_left_img_cont_main_wrapper">
                                                                     <h3><a href="#">Award of the year</a></h3>
@@ -349,7 +349,7 @@
                                                             <div class="ne_re_left_top_main_wrapper">
                                                                 <div class="ne_re_left_img_main_wrapper ne_re_left_img_main_wrapper2">
                                                                     <img src="{% static 'images/content/r2.jpg' %}" alt="img">
-                                                                    <h2>Sport</h2>
+                                                                    <h2>{% trans 'Sport' %}</h2>
                                                                 </div>
                                                                 <div class="ne_re_left_img_cont_main_wrapper">
                                                                     <h3><a href="#">The clock is ticking </a></h3>
@@ -383,7 +383,7 @@
                                                             <div class="ne_re_left_top_main_wrapper">
                                                                 <div class="ne_re_left_img_main_wrapper">
                                                                     <img src="{% static 'images/content/r1.jpg' %}" alt="img">
-                                                                    <h2>Sport</h2>
+                                                                    <h2>{% trans 'Sport' %}</h2>
                                                                 </div>
                                                                 <div class="ne_re_left_img_cont_main_wrapper">
                                                                     <h3><a href="#">Award of the year</a></h3>
@@ -408,7 +408,7 @@
                                                             <div class="ne_re_left_top_main_wrapper">
                                                                 <div class="ne_re_left_img_main_wrapper ne_re_left_img_main_wrapper2">
                                                                     <img src="{% static 'images/content/r2.jpg' %}" alt="img">
-                                                                    <h2>Sport</h2>
+                                                                    <h2>{% trans 'Sport' %}</h2>
                                                                 </div>
                                                                 <div class="ne_re_left_img_cont_main_wrapper">
                                                                     <h3><a href="#">The clock is ticking </a></h3>
@@ -437,7 +437,7 @@
                                                             <div class="ne_re_left_top_main_wrapper">
                                                                 <div class="ne_re_left_img_main_wrapper">
                                                                     <img src="{% static 'images/content/r1.jpg' %}" alt="img">
-                                                                    <h2>Bussiness</h2>
+                                                                    <h2>{% trans 'Bussiness' %}</h2>
                                                                 </div>
                                                                 <div class="ne_re_left_img_cont_main_wrapper">
                                                                     <h3><a href="#">Award of the year</a></h3>
@@ -462,7 +462,7 @@
                                                             <div class="ne_re_left_top_main_wrapper">
                                                                 <div class="ne_re_left_img_main_wrapper ne_re_left_img_main_wrapper2">
                                                                     <img src="{% static 'images/content/r2.jpg' %}" alt="img">
-                                                                    <h2>Sport</h2>
+                                                                    <h2>{% trans 'Sport' %}</h2>
                                                                 </div>
                                                                 <div class="ne_re_left_img_cont_main_wrapper">
                                                                     <h3><a href="#">The clock is ticking </a></h3>
@@ -486,7 +486,7 @@
                                                                     <img src="{% static 'images/content/rs3.jpg' %}" alt="rs_img">
                                                                 </div>
                                                                 <div class="ne_re_bottom_img_cont">
-                                                                    <h3><a href="#">Tesla just lost its head </a></h3>
+                                                                    <h3><a href="#">{% trans 'Tesla just lost its head' %} </a></h3>
                                                                     <p><a href="#"><i class="fa fa-calendar"></i> &nbsp;25 OCT, 2022</a>
                                                                     </p>
                                                                 </div>
@@ -496,7 +496,7 @@
                                                                     <img src="{% static 'images/content/rs4.jpg' %}" alt="rs_img">
                                                                 </div>
                                                                 <div class="ne_re_bottom_img_cont">
-                                                                    <h3><a href="#">Hands on with the Apple </a></h3>
+                                                                    <h3><a href="#">{% trans 'Hands on with the Apple' %} </a></h3>
                                                                     <p><a href="#"><i class="fa fa-calendar"></i> &nbsp;25 OCT, 2022</a>
                                                                     </p>
                                                                 </div>
@@ -510,10 +510,10 @@
                                                             <div class="ne_re_left_top_main_wrapper">
                                                                 <div class="ne_re_left_img_main_wrapper">
                                                                     <img src="{% static 'images/content/r1.jpg' %}" alt="img">
-                                                                    <h2>Sport</h2>
+                                                                    <h2>{% trans 'Sport' %}</h2>
                                                                 </div>
                                                                 <div class="ne_re_left_img_cont_main_wrapper">
-                                                                    <h3><a href="#">Award of the year</a></h3>
+                                                                    <h3><a href="#">{% trans 'Award of the year' %}</a></h3>
                                                                     <ul class="ne_re_social1_wrapper">
                                                                         <li data-animation="animated fadeInLeft"><a href="#"><i class="fa fa-calendar"></i> &nbsp;25 OCT, 2022</a>
                                                                         </li>
@@ -534,7 +534,7 @@
                                                                     <img src="{% static 'images/content/rs1.jpg' %}" alt="rs_img">
                                                                 </div>
                                                                 <div class="ne_re_bottom_img_cont">
-                                                                    <h3><a href="#">Tesla just lost its head </a></h3>
+                                                                    <h3><a href="#">{% trans 'Tesla just lost its head' %} </a></h3>
                                                                     <p><a href="#"><i class="fa fa-calendar"></i> &nbsp;25 OCT, 2022</a>
                                                                     </p>
                                                                 </div>
@@ -544,7 +544,7 @@
                                                                     <img src="{% static 'images/content/rs2.jpg' %}" alt="rs_img">
                                                                 </div>
                                                                 <div class="ne_re_bottom_img_cont">
-                                                                    <h3><a href="#">Google shifting threatens </a></h3>
+                                                                    <h3><a href="#">{% trans 'Google shifting threatens' %} </a></h3>
                                                                     <p><a href="#"><i class="fa fa-calendar"></i> &nbsp;25 OCT, 2022</a>
                                                                     </p>
                                                                 </div>
@@ -554,10 +554,10 @@
                                                             <div class="ne_re_left_top_main_wrapper">
                                                                 <div class="ne_re_left_img_main_wrapper ne_re_left_img_main_wrapper2">
                                                                     <img src="{% static 'images/content/r2.jpg' %}" alt="img">
-                                                                    <h2>Sport</h2>
+                                                                    <h2>{% trans 'Sport' %}</h2>
                                                                 </div>
                                                                 <div class="ne_re_left_img_cont_main_wrapper">
-                                                                    <h3><a href="#">The clock is ticking </a></h3>
+                                                                    <h3><a href="#">{% trans 'The clock is ticking' %} </a></h3>
                                                                     <ul class="ne_re_social1_wrapper">
                                                                         <li data-animation="animated fadeInLeft"><a href="#"><i class="fa fa-calendar"></i> &nbsp;25 OCT, 2022</a>
                                                                         </li>
@@ -578,7 +578,7 @@
                                                                     <img src="{% static 'images/content/rs3.jpg' %}" alt="rs_img">
                                                                 </div>
                                                                 <div class="ne_re_bottom_img_cont">
-                                                                    <h3><a href="#">Tesla just lost its head </a></h3>
+                                                                    <h3><a href="#">{% trans 'Tesla just lost its head' %} </a></h3>
                                                                     <p><a href="#"><i class="fa fa-calendar"></i> &nbsp;25 OCT, 2022</a>
                                                                     </p>
                                                                 </div>
@@ -602,7 +602,7 @@
                                                             <div class="ne_re_left_top_main_wrapper">
                                                                 <div class="ne_re_left_img_main_wrapper">
                                                                     <img src="{% static 'images/content/r1.jpg' %}" alt="img">
-                                                                    <h2>Sport</h2>
+                                                                    <h2>{% trans 'Sport' %}</h2>
                                                                 </div>
                                                                 <div class="ne_re_left_img_cont_main_wrapper">
                                                                     <h3><a href="#">Award of the year</a></h3>
@@ -646,7 +646,7 @@
                                                             <div class="ne_re_left_top_main_wrapper">
                                                                 <div class="ne_re_left_img_main_wrapper ne_re_left_img_main_wrapper2">
                                                                     <img src="{% static 'images/content/r2.jpg' %}" alt="img">
-                                                                    <h2>Sport</h2>
+                                                                    <h2>{% trans 'Sport' %}</h2>
                                                                 </div>
                                                                 <div class="ne_re_left_img_cont_main_wrapper">
                                                                     <h3><a href="#">The clock is ticking </a></h3>
@@ -694,7 +694,7 @@
                                                             <div class="ne_re_left_top_main_wrapper">
                                                                 <div class="ne_re_left_img_main_wrapper">
                                                                     <img src="{% static 'images/content/r1.jpg' %}" alt="img">
-                                                                    <h2>Sport</h2>
+                                                                    <h2>{% trans 'Sport' %}</h2>
                                                                 </div>
                                                                 <div class="ne_re_left_img_cont_main_wrapper">
                                                                     <h3><a href="#">Award of the year</a></h3>
@@ -738,7 +738,7 @@
                                                             <div class="ne_re_left_top_main_wrapper">
                                                                 <div class="ne_re_left_img_main_wrapper ne_re_left_img_main_wrapper2">
                                                                     <img src="{% static 'images/content/r2.jpg' %}" alt="img">
-                                                                    <h2>Sport</h2>
+                                                                    <h2>{% trans 'Sport' %}</h2>
                                                                 </div>
                                                                 <div class="ne_re_left_img_cont_main_wrapper">
                                                                     <h3><a href="#">The clock is ticking </a></h3>
@@ -792,7 +792,7 @@
                                                             <div class="ne_re_left_top_main_wrapper">
                                                                 <div class="ne_re_left_img_main_wrapper">
                                                                     <img src="{% static 'images/content/r1.jpg' %}" alt="img">
-                                                                    <h2>Sport</h2>
+                                                                    <h2>{% trans 'Sport' %}</h2>
                                                                 </div>
                                                                 <div class="ne_re_left_img_cont_main_wrapper">
                                                                     <h3><a href="#">Award of the year</a></h3>
@@ -836,7 +836,7 @@
                                                             <div class="ne_re_left_top_main_wrapper">
                                                                 <div class="ne_re_left_img_main_wrapper ne_re_left_img_main_wrapper2">
                                                                     <img src="{% static 'images/content/r2.jpg' %}" alt="img">
-                                                                    <h2>Sport</h2>
+                                                                    <h2>{% trans 'Sport' %}</h2>
                                                                 </div>
                                                                 <div class="ne_re_left_img_cont_main_wrapper">
                                                                     <h3><a href="#">The clock is ticking </a></h3>
@@ -884,7 +884,7 @@
                                                             <div class="ne_re_left_top_main_wrapper">
                                                                 <div class="ne_re_left_img_main_wrapper">
                                                                     <img src="{% static 'images/content/r1.jpg' %}" alt="img">
-                                                                    <h2>Sport</h2>
+                                                                    <h2>{% trans 'Sport' %}</h2>
                                                                 </div>
                                                                 <div class="ne_re_left_img_cont_main_wrapper">
                                                                     <h3><a href="#">Award of the year</a></h3>
@@ -928,7 +928,7 @@
                                                             <div class="ne_re_left_top_main_wrapper">
                                                                 <div class="ne_re_left_img_main_wrapper ne_re_left_img_main_wrapper2">
                                                                     <img src="{% static 'images/content/r2.jpg' %}" alt="img">
-                                                                    <h2>Sport</h2>
+                                                                    <h2>{% trans 'Sport' %}</h2>
                                                                 </div>
                                                                 <div class="ne_re_left_img_cont_main_wrapper">
                                                                     <h3><a href="#">The clock is ticking </a></h3>
@@ -976,7 +976,7 @@
                                                             <div class="ne_re_left_top_main_wrapper">
                                                                 <div class="ne_re_left_img_main_wrapper">
                                                                     <img src="{% static 'images/content/r1.jpg' %}" alt="img">
-                                                                    <h2>Sport</h2>
+                                                                    <h2>{% trans 'Sport' %}</h2>
                                                                 </div>
                                                                 <div class="ne_re_left_img_cont_main_wrapper">
                                                                     <h3><a href="#">Award of the year</a></h3>
@@ -1020,7 +1020,7 @@
                                                             <div class="ne_re_left_top_main_wrapper">
                                                                 <div class="ne_re_left_img_main_wrapper ne_re_left_img_main_wrapper2">
                                                                     <img src="{% static 'images/content/r2.jpg' %}" alt="img">
-                                                                    <h2>Sport</h2>
+                                                                    <h2>{% trans 'Sport' %}</h2>
                                                                 </div>
                                                                 <div class="ne_re_left_img_cont_main_wrapper">
                                                                     <h3><a href="#">The clock is ticking </a></h3>
@@ -1068,7 +1068,7 @@
                                                             <div class="ne_re_left_top_main_wrapper">
                                                                 <div class="ne_re_left_img_main_wrapper">
                                                                     <img src="{% static 'images/content/r1.jpg' %}" alt="img">
-                                                                    <h2>Sport</h2>
+                                                                    <h2>{% trans 'Sport' %}</h2>
                                                                 </div>
                                                                 <div class="ne_re_left_img_cont_main_wrapper">
                                                                     <h3><a href="#">Award of the year</a></h3>
@@ -1112,7 +1112,7 @@
                                                             <div class="ne_re_left_top_main_wrapper">
                                                                 <div class="ne_re_left_img_main_wrapper ne_re_left_img_main_wrapper2">
                                                                     <img src="{% static 'images/content/r2.jpg' %}" alt="img">
-                                                                    <h2>Sport</h2>
+                                                                    <h2>{% trans 'Sport' %}</h2>
                                                                 </div>
                                                                 <div class="ne_re_left_img_cont_main_wrapper">
                                                                     <h3><a href="#">The clock is ticking </a></h3>
@@ -1160,7 +1160,7 @@
                                                             <div class="ne_re_left_top_main_wrapper">
                                                                 <div class="ne_re_left_img_main_wrapper">
                                                                     <img src="{% static 'images/content/r1.jpg' %}" alt="img">
-                                                                    <h2>Sport</h2>
+                                                                    <h2>{% trans 'Sport' %}</h2>
                                                                 </div>
                                                                 <div class="ne_re_left_img_cont_main_wrapper">
                                                                     <h3><a href="#">Award of the year</a></h3>
@@ -1204,7 +1204,7 @@
                                                             <div class="ne_re_left_top_main_wrapper">
                                                                 <div class="ne_re_left_img_main_wrapper ne_re_left_img_main_wrapper2">
                                                                     <img src="{% static 'images/content/r2.jpg' %}" alt="img">
-                                                                    <h2>Sport</h2>
+                                                                    <h2>{% trans 'Sport' %}</h2>
                                                                 </div>
                                                                 <div class="ne_re_left_img_cont_main_wrapper">
                                                                     <h3><a href="#">The clock is ticking </a></h3>
@@ -1256,7 +1256,7 @@
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                         <div class="ne_busness_main_slider_wrapper">
                                             <div class="ne_recent_heading_main_wrapper">
-                                                <h2>Business</h2>
+                                                <h2>{% trans 'Business' %}</h2>
                                             </div>
                                         </div>
                                     </div>
@@ -1267,7 +1267,7 @@
                                                     <div class="ne_re_left_top_main_wrapper">
                                                         <div class="ne_re_left_img_main_wrapper">
                                                             <img src="{% static 'images/content/bs1.jpg' %}" alt="img">
-                                                            <h2>business</h2>
+                                                            <h2>{% trans 'business' %}</h2>
                                                         </div>
                                                         <div class="ne_re_left_img_cont_main_wrapper ne_buss_img_cont_main_wrapper">
                                                             <h3><a href="#">Proin gravida nibhvel velit auctor.</a></h3>
@@ -1282,7 +1282,7 @@
                                                     <div class="ne_re_left_top_main_wrapper">
                                                         <div class="ne_re_left_img_main_wrapper">
                                                             <img src="{% static 'images/content/bs2.jpg' %}" alt="img">
-                                                            <h2>team work</h2>
+                                                            <h2>{% trans 'team work' %}</h2>
                                                         </div>
                                                         <div class="ne_re_left_img_cont_main_wrapper ne_buss_img_cont_main_wrapper">
                                                             <h3><a href="#">Faangs diverge prospect</a></h3>
@@ -1297,7 +1297,7 @@
                                                     <div class="ne_re_left_top_main_wrapper">
                                                         <div class="ne_re_left_img_main_wrapper">
                                                             <img src="{% static 'images/content/bs3.jpg '%}" alt="img">
-                                                            <h2>business</h2>
+                                                            <h2>{% trans 'business' %}</h2>
                                                         </div>
                                                         <div class="ne_re_left_img_cont_main_wrapper ne_buss_img_cont_main_wrapper">
                                                             <h3><a href="#">Beats did something today</a></h3>
@@ -1319,7 +1319,7 @@
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <div class="ne_busness_main_slider_wrapper">
                                         <div class="ne_recent_heading_main_wrapper">
-                                            <h2>Sport</h2>
+                                            <h2>{% trans 'Sport' %}</h2>
                                         </div>
                                     </div>
                                 </div>
@@ -1330,7 +1330,7 @@
                                                 <div class="ne_re_left_top_main_wrapper">
                                                     <div class="ne_re_left_img_main_wrapper">
                                                         <img src="{% static 'images/content/bs1.jpg' %}" alt="img">
-                                                        <h2>Sport</h2>
+                                                        <h2>{% trans 'Sport' %}</h2>
                                                     </div>
                                                     <div class="ne_re_left_img_cont_main_wrapper ne_buss_img_cont_main_wrapper">
                                                         <h3><a href="#">Proin gravida nibhvel velit auctor.</a></h3>
@@ -1345,7 +1345,7 @@
                                                 <div class="ne_re_left_top_main_wrapper">
                                                     <div class="ne_re_left_img_main_wrapper">
                                                         <img src="{% static 'images/content/bs2.jpg' %}" alt="img">
-                                                        <h2>Sport</h2>
+                                                        <h2>{% trans 'Sport' %}</h2>
                                                     </div>
                                                     <div class="ne_re_left_img_cont_main_wrapper ne_buss_img_cont_main_wrapper">
                                                         <h3><a href="#">Faangs diverge prospect</a></h3>
@@ -1360,7 +1360,7 @@
                                                 <div class="ne_re_left_top_main_wrapper">
                                                     <div class="ne_re_left_img_main_wrapper">
                                                         <img src="{% static 'images/content/bs3.jpg' %}" alt="img">
-                                                        <h2>Sport</h2>
+                                                        <h2>{% trans 'Sport' %}</h2>
                                                     </div>
                                                     <div class="ne_re_left_img_cont_main_wrapper ne_buss_img_cont_main_wrapper">
                                                         <h3><a href="#">Beats did something today</a></h3>
@@ -1380,21 +1380,21 @@
                             
 
 
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <div class="row">
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                         <div class="ne_busness_main_slider_wrapper">
                                             <div class="ne_recent_heading_main_wrapper">
-                                                <h2>Gatgets</h2>
+                                                <h2>{% trans 'Gatgets' %}</h2>
                                             </div>
                                         </div>
                                     </div>
-                                    {% for i in gatgets_by_page %}
+                                    {% for i in gatgets %}
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                             <div class="ne_gt_left_top_main_wrapper ne_gt_left_top_main_wrapper1">
                                                 <div class="ne_gt_left_img_main_wrapper">
                                                     <img src="{{ i.imageURL }} "alt="img">
-                                                    <h2>Technology</h2>
+                                                    <h2>{% trans 'Technology' %}</h2>
                                                 </div>
                                                 <div class="ne_gt_left_img_cont_main_wrapper">
                                                     <h3><a href="#">Award of the year</a></h3>
@@ -1452,7 +1452,7 @@
                                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                 <div class="ne_busness_main_slider_wrapper">
                                                     <div class="ne_recent_heading_main_wrapper">
-                                                        <h2>Travels</h2>
+                                                        <h2>{% trans 'Travels' %}</h2>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1704,12 +1704,12 @@
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <div class="ne_sidebar_inner_social_wrapper ne_sidebar_second_inner_social_wrapper ne_sidebar_inner_social_wrapper_hide_res_weather">
                                     <div class="ne_recent_heading_main_wrapper font_18px">
-                                        <h2>Today weather</h2>
+                                        <h2>{% trans 'Today weather' %}</h2>
                                     </div>
                                     <div class="ne_weather_inner_wrapper">
                                         <div id="current" class="wrapper">
                                             <h1 class="location">Chicago, IL</h1>
-                                            <h2 class="date">Sunday, January 1, 2022</h2>
+                                            <h2 class="date">{% trans 'Sunday, January 1, 2022' %}</h2>
                                             <p class="weather_img">
                                                 <img src="{% static 'images/content/weather_img.png' %}" alt="weather">
                                             </p>
@@ -1749,14 +1749,14 @@
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <div class="ne_sidebar_inner_social_wrapper ne_sidebar_second_inner_social_wrapper">
                                     <div class="ne_recent_heading_main_wrapper font_18px">
-                                        <h2>Latest News</h2>
+                                        <h2>{% trans 'Latest News' %}</h2>
                                     </div>
                                     <div class="ne_lns_slider_wrapper ne_ln_main_sidebar_slider_wrapper">
                                         <div class="owl-carousel owl-theme">
                                             <div class="item">
                                                 <div class="ne_wn_img_main_wrapper ne_ln_inner_img_main_wrapper ne_re_left_img_main_wrapper2">
                                                     <div class="ne_wn_img_overlay"></div>
-                                                    <h2>sport</h2>
+                                                    <h2>{% trans 'sport' %}</h2>
                                                     <div class="ne_wn_social_inner_wrapper">
                                                         <h3><a href="#">Award of the year</a></h3>
                                                         <ul class="ne_wn_social1_wrapper">
@@ -1771,7 +1771,7 @@
                                             <div class="item">
                                                 <div class="ne_wn_img_main_wrapper ne_ln_inner_img_main_wrapper ne_re_left_img_main_wrapper2">
                                                     <div class="ne_wn_img_overlay"></div>
-                                                    <h2>sport</h2>
+                                                    <h2>{% trans 'sport' %}</h2>
                                                     <div class="ne_wn_social_inner_wrapper">
                                                         <h3><a href="#">The clock is ticking </a></h3>
                                                         <ul class="ne_wn_social1_wrapper">
@@ -1786,7 +1786,7 @@
                                             <div class="item">
                                                 <div class="ne_wn_img_main_wrapper ne_ln_inner_img_main_wrapper ne_re_left_img_main_wrapper2">
                                                     <div class="ne_wn_img_overlay"></div>
-                                                    <h2>sport</h2>
+                                                    <h2>{% trans 'sport' %}</h2>
                                                     <div class="ne_wn_social_inner_wrapper">
                                                         <h3><a href="#">Award of the year</a></h3>
                                                         <ul class="ne_wn_social1_wrapper">
@@ -1805,7 +1805,7 @@
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <div class="ne_sidebar_inner_social_wrapper ne_sidebar_second_inner_social_wrapper">
                                     <div class="ne_recent_heading_main_wrapper font_18px">
-                                        <h2>Categories</h2>
+                                        <h2>{% trans 'Categories' %}</h2>
                                     </div>
                                     <div class="ne_sidebar_cate_list_wrappper">
                                         <ul>
@@ -1826,7 +1826,7 @@
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <div class="ne_sidebar_inner_social_wrapper ne_sidebar_second_inner_social_wrapper">
                                     <div class="ne_recent_heading_main_wrapper font_18px">
-                                        <h2>Advertising</h2>
+                                        <h2>{% trans 'Advertising' %}</h2>
                                     </div>
                                     <div class="ne_sidebar_advertize_main_wrapper">
                                         <a href="#">
@@ -1838,7 +1838,7 @@
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <div class="ne_sidebar_inner_social_wrapper ne_sidebar_second_inner_social_wrapper">
                                     <div class="ne_recent_heading_main_wrapper font_18px">
-                                        <h2>Recent Posts</h2>
+                                        <h2>{% trans 'Recent Posts' %}</h2>
                                     </div>
                                     <div class="ne_re_left_bottom_main_wrapper ne_pc_main_cont_wrapper">
                                         <div class="ne_pc_bottom_img">
@@ -1895,7 +1895,7 @@
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <div class="ne_sidebar_inner_social_wrapper ne_sidebar_second_inner_social_wrapper">
                                     <div class="ne_recent_heading_main_wrapper font_18px">
-                                        <h2>Latest Articles</h2>
+                                        <h2>{% trans 'Latest Articles' %}</h2>
                                     </div>
                                     <div class="ne_wn_img_main_wrapper ne_ln_inner_img_main_wrapper ne_re_left_img_main_wrapper2 bab">
                                         <div class="ne_wn_img_overlay"></div>
@@ -1945,7 +1945,7 @@
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <div class="ne_sidebar_inner_social_wrapper ne_sidebar_second_inner_social_wrapper">
                                     <div class="ne_recent_heading_main_wrapper font_18px">
-                                        <h2>Find us on Facebook</h2>
+                                        <h2>{% trans 'Find us on Facebook' %}</h2>
                                     </div>
                                     <div class="ne_sidebar_faceb_section_img">
                                         <div class="ne_inva_img_overlay"></div>
@@ -1989,7 +1989,7 @@
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <div class="ne_sidebar_inner_social_wrapper ne_sidebar_second_inner_social_wrapper">
                                     <div class="ne_recent_heading_main_wrapper font_18px">
-                                        <h2>Get Even More</h2>
+                                        <h2>{% trans 'Get Even More' %}</h2>
                                     </div>
                                     <div class="ne_sidebar_serch_main_wrapper">
                                         <p>"Get all latest content delivered straight to your inbox."</p>
@@ -2004,7 +2004,7 @@
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <div class="ne_sidebar_inner_social_wrapper ne_sidebar_second_inner_social_wrapper">
                                     <div class="ne_recent_heading_main_wrapper font_18px">
-                                        <h2>latest reviews</h2>
+                                        <h2>{% trans 'latest reviews' %}</h2>
                                     </div>
                                     <div class="ne_lr_main_section_wrapper">
                                         <div class="ne_lr_img_wrapper">

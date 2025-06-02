@@ -11,6 +11,7 @@ def index(request):
     sport = Category.custom.get_category('Sport')
     technology = Category.custom.get_category('Technology')
     life_style = Category.custom.get_category('Life Style')
+    
     wheather = Category.custom.get_category('wheather')
     latest_news = Category.custom.get_category('latest_news')
     advertising = Category.custom.get_category('advertising')

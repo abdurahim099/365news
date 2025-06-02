@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-28 15:45+0500\n"
+"POT-Creation-Date: 2025-06-02 17:00+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,333 +16,265 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: .\templates\404.html:14 .\templates\author.html:13 .\templates\blog.html:13
-#: .\templates\blog_single.html:13 .\templates\contact.html:13
-#: .\templates\gallery.html:13 .\templates\gallery_single.html:13
-#: .\templates\index.html:15 .\templates\life_style.html:13
-#: .\templates\sport.html:12 .\templates\technology.html:12
-msgid "Trending"
-msgstr ""
-
-#: .\templates\404.html:42
+#: .\templates\404.html:59
 msgid "error"
-msgstr "error"
+msgstr "ошибка"
 
-#: .\templates\404.html:43
-msgid "page not found"
-msgstr "page not found"
+#: .\templates\author.html:13 .\templates\index.html:14
+msgid "Trending"
+msgstr "В тренде"
 
-#: .\templates\author.html:72
+#: .\templates\author.html:19
+msgid "This is Photoshop"
+msgstr "Это фотошоп."
+
+#: .\templates\author.html:42
+msgid "Home"
+msgstr "Дом"
+
+#: .\templates\author.html:43 .\templates\base.html:248
+msgid "Author"
+msgstr "Автор"
+
+#: .\templates\author.html:86
 msgid "more about author"
-msgstr "more about author"
-
-#: .\templates\author.html:79
-msgid ""
-"Phasellus eu scelerisque nisi. Nunc odio justo, laoreet varius ante et, "
-"pulvinar vulputate ligula. Maecenas nec justo lacinia, luctus urna eu, "
-"rutrum justo. Maecenas dolor erat, porttitor quis nunc a, consectetur "
-"elementum ante. Duis odio nisi, risque at consequat quis, consectetur in "
-"eros. ."
-msgstr ""
-
-#: .\templates\author.html:91
-msgid "Award of the year"
-msgstr "Award of the year"
-
-#: .\templates\author.html:92
-msgid ""
-"auctor, nisi elit consequat ipsum, nec sem nibh id elit.Aenean sollicitudin, "
-"lorem quis bibendum auctor, nisi elit eneaollicitudin, lorem quis bibendum "
-"auctor,onsepsuec Aenean sollicitudin, lorem quis bibendum auctor, nisi elit "
-"consequat ipsum eneaollicitudin, lorem quis bibendum auctor,onsepsuec nibh "
-"id elit.Aenean sollicitudin, lorem qeneaollicitudin, lorem quis bibendum"
-msgstr ""
-
-#: .\templates\author.html:143
-msgid "Today weather"
-msgstr ""
+msgstr "больше об авторе"
 
 #: .\templates\base.html:31
 msgid "365 Days Responsive HTML Template"
-msgstr ""
+msgstr "365-дневный адаптивный HTML-шаблон"
 
 #: .\templates\base.html:78
 msgid "contact us"
-msgstr ""
+msgstr "связаться с нами"
 
 #: .\templates\base.html:102
 msgid "login"
-msgstr ""
+msgstr "авторизоваться"
 
 #: .\templates\base.html:104
 msgid "menu"
-msgstr ""
+msgstr "меню"
 
 #: .\templates\base.html:116
 msgid "WORLD NEWS"
-msgstr ""
+msgstr "МИРОВЫЕ НОВОСТИ"
 
 #: .\templates\base.html:118
 msgid "SPORT NEWS"
-msgstr ""
+msgstr "НОВОСТИ СПОРТА"
 
 #: .\templates\base.html:120
 msgid "MUSIC NEWS"
-msgstr ""
+msgstr "МУЗЫКАЛЬНЫЕ НОВОСТИ"
 
 #: .\templates\base.html:122
 msgid "BUSINESS NEWS"
-msgstr ""
+msgstr "ДЕЛОВЫЕ НОВОСТИ"
 
 #: .\templates\base.html:124
 msgid "TECHNOLOGICAL"
-msgstr ""
+msgstr "ТЕХНОЛОГИЧЕСКИЙ"
 
 #: .\templates\base.html:126
 msgid "TRAVEL NEWS"
-msgstr ""
+msgstr "НОВОСТИ ПУТЕШЕСТВИЙ"
 
 #: .\templates\base.html:128
 msgid "MECIAL NEWS"
-msgstr ""
+msgstr "МЕДИЦИНСКИЕ НОВОСТИ"
 
 #: .\templates\base.html:167
 msgid "home"
-msgstr ""
+msgstr "дом"
 
-#: .\templates\base.html:172
+#: .\templates\base.html:172 .\templates\index.html:1759
+#: .\templates\index.html:1774 .\templates\index.html:1789
 msgid "sport"
-msgstr ""
+msgstr "спорт"
 
 #: .\templates\base.html:199
 msgid "technology"
-msgstr ""
+msgstr "технология"
 
 #: .\templates\base.html:222
 msgid "pages"
-msgstr ""
+msgstr "страницы"
 
 #: .\templates\base.html:224
 msgid "Blog"
-msgstr ""
+msgstr "Блог"
 
 #: .\templates\base.html:226
 msgid "Blog-Category"
-msgstr ""
+msgstr "Блог-Категория"
 
 #: .\templates\base.html:228
 msgid "Blog-Single"
-msgstr ""
+msgstr "Блог-сингл"
 
 #: .\templates\base.html:232 .\templates\base.html:234
 msgid "Gallery"
-msgstr ""
+msgstr "Галерея"
 
 #: .\templates\base.html:236
 msgid "Gallery-Single"
-msgstr ""
+msgstr "Галерея-Single"
 
 #: .\templates\base.html:242
 msgid "Life-Style"
-msgstr ""
+msgstr "Образ жизни"
 
-#: .\templates\base.html:244
+#: .\templates\base.html:244 .\templates\index.html:135
+#: .\templates\index.html:189 .\templates\index.html:219
+#: .\templates\index.html:244 .\templates\index.html:273
+#: .\templates\index.html:298 .\templates\index.html:327
+#: .\templates\index.html:352 .\templates\index.html:386
+#: .\templates\index.html:411 .\templates\index.html:465
+#: .\templates\index.html:513 .\templates\index.html:557
+#: .\templates\index.html:605 .\templates\index.html:649
+#: .\templates\index.html:697 .\templates\index.html:741
+#: .\templates\index.html:795 .\templates\index.html:839
+#: .\templates\index.html:887 .\templates\index.html:931
+#: .\templates\index.html:979 .\templates\index.html:1023
+#: .\templates\index.html:1071 .\templates\index.html:1115
+#: .\templates\index.html:1163 .\templates\index.html:1207
+#: .\templates\index.html:1322 .\templates\index.html:1333
+#: .\templates\index.html:1348 .\templates\index.html:1363
 msgid "Sport"
-msgstr ""
+msgstr "Спорт"
 
-#: .\templates\base.html:246
+#: .\templates\base.html:246 .\templates\index.html:1397
 msgid "Technology"
-msgstr ""
+msgstr "Технологии"
 
-#: .\templates\base.html:248
-msgid "Author"
-msgstr ""
-
-#: .\templates\base.html:254 .\templates\login.html:16
-#: .\templates\login.html:52
+#: .\templates\base.html:251
 msgid "Login"
-msgstr ""
+msgstr "Авторизоваться"
 
-#: .\templates\base.html:257 .\templates\register.html:14
+#: .\templates\base.html:254
 msgid "Register"
-msgstr ""
+msgstr "Зарегистрироваться"
 
-#: .\templates\base.html:261
+#: .\templates\base.html:258
 msgid "Contact"
-msgstr ""
+msgstr "Контакт"
 
-#: .\templates\blog.html:47
-msgid "Bo'yicha qidiruv natijasi"
-msgstr ""
-
-#: .\templates\blog.html:67 .\templates\blog_single.html:176
-msgid "Like"
-msgstr ""
-
-#: .\templates\blog.html:69
-msgid "Comments"
-msgstr ""
-
-#: .\templates\blog_single.html:78
-msgid "Sharing is Caring"
-msgstr ""
-
-#: .\templates\blog_single.html:101
-msgid "About Author"
-msgstr ""
-
-#: .\templates\blog_single.html:134
-msgid "leave a comment"
-msgstr ""
-
-#: .\templates\blog_single.html:144
-msgid "YUBORISH"
-msgstr ""
-
-#: .\templates\blog_single.html:146
-msgid "LOGIN"
-msgstr ""
-
-#: .\templates\blog_single.html:152
-msgid "comments"
-msgstr ""
-
-#: .\templates\blog_single.html:154
-msgid "New Template"
-msgstr ""
-
-#: .\templates\blog_single.html:160
-msgid "Recommend"
-msgstr ""
-
-#: .\templates\blog_single.html:174
-msgid "Share"
-msgstr ""
-
-#: .\templates\blog_single.html:178
-msgid "reply"
-msgstr ""
-
-#: .\templates\blog_single.html:215
-msgid "Bog‘liq bloglar topilmadi"
-msgstr ""
-
-#: .\templates\contact.html:41
-msgid "some line for news express"
-msgstr ""
-
-#: .\templates\contact.html:42
-msgid ""
-"This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit "
-"auctor aliquet. ean sollicitudin, lorem quis bibendum auctor, nisi elit "
-"consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh "
-"vulputate cursus a sit amet mauris.This is version of Lorem Ipsum. Proin "
-"gravida nibh vel velit auctor aliquet. ean sollicitudin, lorem quis bibendum "
-"auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed "
-"odio sit amet nibh vulputate cursus a sit amet mauris."
-msgstr ""
-
-#: .\templates\contact.html:53
-msgid "121 King Street, Melbourne, Australia Victoria 3000"
-msgstr ""
-
-#: .\templates\gallery_single.html:41
-msgid "photo gallary"
-msgstr ""
-
-#: .\templates\gallery_single.html:61
-msgid "style"
+#: .\templates\index.html:48
+msgid "Top news"
 msgstr ""
 
 #: .\templates\index.html:91
 msgid "Recent news"
 msgstr ""
 
-#: .\templates\index.html:156
-msgid "Ushbu kategoriyada postlar yo'q."
+#: .\templates\index.html:110 .\templates\index.html:164
+#: .\templates\index.html:440
+msgid "Bussiness"
 msgstr ""
 
-#: .\templates\index.html:162
-msgid "Kategoriyalar topilmadi."
+#: .\templates\index.html:167 .\templates\index.html:516
+msgid "Award of the year"
 msgstr ""
 
-#: .\templates\login.html:27
-msgid "Login with Facebook"
+#: .\templates\index.html:247 .\templates\index.html:560
+msgid "The clock is ticking"
 msgstr ""
 
-#: .\templates\login.html:31
-msgid "Login with Google"
+#: .\templates\index.html:489 .\templates\index.html:537
+#: .\templates\index.html:581
+msgid "Tesla just lost its head"
 msgstr ""
 
-#: .\templates\login.html:35 .\venv\Lib\site-packages\django\utils\text.py:278
-msgid "or"
+#: .\templates\index.html:499
+msgid "Hands on with the Apple"
 msgstr ""
 
-#: .\templates\login.html:47
-msgid "Remember me"
+#: .\templates\index.html:547
+msgid "Google shifting threatens"
 msgstr ""
 
-#: .\templates\login.html:49
-msgid "Forgot Password"
+#: .\templates\index.html:1259
+msgid "Business"
 msgstr ""
 
-#: .\templates\login.html:55
-msgid "Don’t have an account ? "
+#: .\templates\index.html:1270 .\templates\index.html:1300
+msgid "business"
 msgstr ""
 
-#: .\templates\login.html:55
-msgid "Register Now"
+#: .\templates\index.html:1285
+msgid "team work"
 msgstr ""
 
-#: .\templates\login.html:59 .\templates\register.html:58
-msgid ""
-"In case you are using a public/shared computer we recommend that you logout "
-"to prevent any un-authorized access to your account"
+#: .\templates\index.html:1388
+msgid "Gatgets"
 msgstr ""
 
-#: .\templates\register.html:45
-msgid "I agreed to the"
+#: .\templates\index.html:1455
+msgid "Travels"
 msgstr ""
 
-#: .\templates\register.html:45
-msgid "Terms and Conditions</a> governing the use of weapon store"
+#: .\templates\index.html:1707
+msgid "Today weather"
 msgstr ""
 
-#: .\templates\register.html:50
-msgid "register"
+#: .\templates\index.html:1712
+msgid "Sunday, January 1, 2022"
 msgstr ""
 
-#: .\templates\register.html:53
-msgid "Already a member?"
+#: .\templates\index.html:1752
+msgid "Latest News"
 msgstr ""
 
-#: .\templates\register.html:53
-msgid "Login Here"
+#: .\templates\index.html:1808
+#, fuzzy
+#| msgid "Blog-Category"
+msgid "Categories"
+msgstr "Блог-Категория"
+
+#: .\templates\index.html:1829
+msgid "Advertising"
 msgstr ""
 
-#: .\venv\Lib\site-packages\bootstrap5\components.py:17
-#: .\venv\Lib\site-packages\bootstrap5\templates\bootstrap5\form_errors.html:3
-#: .\venv\Lib\site-packages\bootstrap5\templates\bootstrap5\messages.html:4
-msgid "close"
+#: .\templates\index.html:1841
+msgid "Recent Posts"
+msgstr ""
+
+#: .\templates\index.html:1898
+msgid "Latest Articles"
+msgstr ""
+
+#: .\templates\index.html:1948
+msgid "Find us on Facebook"
+msgstr ""
+
+#: .\templates\index.html:1992
+msgid "Get Even More"
+msgstr ""
+
+#: .\templates\index.html:2007
+msgid "latest reviews"
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\contrib\messages\apps.py:16
 msgid "Messages"
-msgstr ""
+msgstr "Сообщения"
 
 #: .\venv\Lib\site-packages\django\contrib\sitemaps\apps.py:8
 msgid "Site Maps"
-msgstr ""
+msgstr "Карты сайта"
 
 #: .\venv\Lib\site-packages\django\contrib\staticfiles\apps.py:9
 msgid "Static Files"
-msgstr ""
+msgstr "Статические файлы"
 
 #: .\venv\Lib\site-packages\django\contrib\syndication\apps.py:7
 msgid "Syndication"
-msgstr ""
+msgstr "Синдикация"
 
 #. Translators: String used to replace omitted page numbers in elided page
 #. range generated by paginators, e.g. [1, 2, '…', 5, 6, 7, '…', 9, 10].
@@ -1325,14 +1257,18 @@ msgstr ""
 msgid "This is not a valid IPv6 address."
 msgstr ""
 
-#: .\venv\Lib\site-packages\django\utils\text.py:67
+#: .\venv\Lib\site-packages\django\utils\text.py:76
 #, python-format
 msgctxt "String to return when truncating text"
 msgid "%(truncated_text)s…"
 msgstr ""
 
+#: .\venv\Lib\site-packages\django\utils\text.py:287
+msgid "or"
+msgstr ""
+
 #. Translators: This string is used as a separator between list elements
-#: .\venv\Lib\site-packages\django\utils\text.py:297
+#: .\venv\Lib\site-packages\django\utils\text.py:306
 #: .\venv\Lib\site-packages\django\utils\timesince.py:135
 msgid ", "
 msgstr ""
@@ -1568,6 +1504,3 @@ msgstr ""
 #: .\venv\Lib\site-packages\django_ckeditor_5\widgets.py:43
 msgid "Check the correct settings.CKEDITOR_5_CONFIGS "
 msgstr ""
-
-#~ msgid "sahifa mavjud emas."
-#~ msgstr "Page Not Found"
