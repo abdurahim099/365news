@@ -3,6 +3,7 @@ from .models import Category, Blog
 from utils.views import group_queryset
 from django.core.paginator import Paginator
 
+
 def index(request):
     blogs = Blog.objects.order_by('-id')[:5]
     blogs2 = Blog.objects.all()
@@ -27,7 +28,7 @@ def index(request):
 
     gatgets_blog = Blog.objects.filter(category = gatgets)
     
-    print(gatgets_blog,'--------------------------------------------------------------------------------------------')
+    print(gatgets_blog,'---------------------------------------------------------------')
     gatgets_paginator = Paginator(gatgets_blog,3)     
     page_number = request.GET.get('page',1)
 

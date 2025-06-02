@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-{% load static %}
+{% load static i18n custom_tags %}
+
+{% get_current_language as LANGUAGES_CODE %}
+{% get_available_languages as languages %}
 
 <html lang="en">
-
 
 <head>
     <meta charset="utf-8" />
@@ -26,12 +28,12 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/magnific-popup.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}" />
-    <!-- favicon links -->
+    
     <link rel="shortcut icon" type="image/png" href="{% static 'images/header/favicon.ico' %}" />
 </head>
 
 <body>
-    <!-- preloader Start -->
+   
     <div id="preloader">
         <div id="status_1">
             <img src="{% static 'images/header/loader.gif' %}" id="preloader_image" alt="loader">
@@ -43,20 +45,14 @@
                 <div id="day_and_time">
                     <p id="date"></p>
                 </div>
-                <div class="ne_top_about_btn hidden-xs"> <a href="{% url 'contact' %}">contact us</a>
+                <div class="ne_top_about_btn hidden-xs"> <a href="contact.html">{% trans "contact us" %}</a>
                 </div>
-            </div>
+            </div> 
             <div class="ne_right_sec_main_wrapper">
-                <ul>
-                    <ul class="language-switcher">
-                         {% for language, title in languages %}
-                             {% get_url_tag request=request lang=language as url %}
-                             <li class="hidden-xs">
-                                 <a href="?lang={{ language }}">
-                                     <i class="fa fa-globe"></i> {{ title }}
-                                 </a>
-                             </li>
-                         {% endfor %}
+                    <li class="hidden-xs"><a href="{% url 'login' %}">{% trans "login" %} &nbsp;<i class="fa fa-user"></i></a>
+                    </li>
+                    <li><a href="#" class="second-nav-toggler mee">{% trans "menu" %} &nbsp;<i class="flaticon-text"></i></a>
+                    </li>
                 </ul>
                 <div id="mobile-nav" data-prevent-default="true" data-mouse-events="true">
                     <div class="mobail_nav_overlay"></div>
@@ -107,8 +103,8 @@
             <div class="serach-header">
                 <div class="searchbox">
                     <button class="close">×</button>
-                    <form>
-                        <input type="search" placeholder="Search …">
+                    <form >
+                        <input type="search" name="title" placeholder="Search …">
                         <button type="submit"><i class="fa fa-search"></i>
                         </button>
                     </form>
@@ -116,7 +112,7 @@
             </div>
             <div class="prs_navi_left_main_wrapper">
                 <div class="prs_logo_main_wrapper">
-                    <a href="index.html">
+                    <a href="{% url 'home' %}">
                         <img src="{% static 'images/header/logo.png' %}" alt="logo" class="img-responsive hidden-xs" />
                         <img src="{% static 'images/header/logo.png' %}" alt="logo" class="visible-xs" />
                     </a>
@@ -131,96 +127,12 @@
                             <div class="searchd"><i class="fa fa-search"></i>
                             </div>
                             <ul class="dl-menu">
-                                <li class="parent"><a href="{% url 'index' %}" class="effect_nav">home</a>
-                                    <ul class="lg-submenu">
-                                        <li><a href="">Home-I</a>
-                                    </ul>
-                                    <ul class="lg-submenu">
-                                        <li><a>Post Samples</a>
-                                            <ul class="lg-submenu">
-                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Parallax</a>
-                                                </li>
-                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Lightbox </a>
-                                                </li>
-                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Images </a>
-                                                </li>
-                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Video Post</a>
-                                                </li>
-                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Self Hosted </a>
-                                                </li>
-                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Self Hosted </a>
-                                                </li>
-                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">SoundCloud</a>
-                                                </li>
-                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Google Map</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a>Reviews</a>
-                                            <ul class="lg-submenu">
-                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Stars</a>
-                                                </li>
-                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Points</a>
-                                                </li>
-                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Percent</a>
-                                                </li>
-                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Position</a>
-                                                </li>
-                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Position post</a>
-                                                </li>
-                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Position Custom</a>
-                                                </li>
-                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Best Reviews</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a>Shortcodes</a>
-                                            <ul class="lg-submenu">
-                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Boxes</a>
-                                                </li>
-                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Buttons</a>
-                                                </li>
-                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Columns</a>
-                                                </li>
-                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Social  </a>
-                                                </li>
-                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Tabs </a>
-                                                </li>
-                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Text Lists </a>
-                                                </li>
-                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Lightbox</a>
-                                                </li>
-                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Content </a>
-                                                </li>
-                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Audio and Video</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a>Page Templates</a>
-                                            <ul class="lg-submenu">
-                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Masonry </a>
-                                                </li>
-                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Media </a>
-                                                </li>
-                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Authors</a>
-                                                </li>
-                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Blog List </a>
-                                                </li>
-                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Best Reviews</a>
-                                                </li>
-                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Login Page </a>
-                                                </li>
-                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Sitemap Page</a>
-                                                </li>
-                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Tags</a>
-                                                </li>
-                                                <li class="ar_left"><i class="fa fa-newspaper-o hidden-xs"></i><a href="#">Timeline page</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
+                                <li class="parent"><a href="#" class="effect_nav">{% trans "home" %}</a>
+                                   
                                 </li>
-                                <li class="parent megamenu"><a href="{% url 'sport' %}" class="effect_nav"> sport </a>
+                                <li class="parent megamenu"><a href="#" class="effect_nav">{% trans "features" %}</a>
+                                </li>
+                                <li class="parent megamenu"><a href="#" class="effect_nav"> {% trans "sport" %} </a>
                                     <ul class="lg-submenu prs_navi_video_wrapper">
                                         <li class=" prs_vp_hover_overlay">
                                             <div class="ne_re_left_top_main_wrapper">
@@ -290,10 +202,10 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="parent megamenu"><a href="{% url 'technology' %}" class="effect_nav"> technology </a>
+                                <li class="parent megamenu"><a href="#" class="effect_nav"> {% trans "technology" %} </a>
                                     <ul class="lg-submenu prs_navi_video_wrapper">
                                         <li class="prs_vp_hover_overlay">
-                                            <div class="ne_re_left_top_main_wrapper">
+                                            <div class="ne_re_left_top_main_wrapper">   
                                                 <div class="ne_re_left_img_main_wrapper">
                                                     <img src="{% static 'images/content/bs1.jpg' %}" alt="img">
                                                     <h2>health</h2>
@@ -351,18 +263,17 @@
                                                     <ul class="ne_re_social1_wrapper">
                                                         <li data-animation="animated fadeInLeft"><a href="#"><i class="fa fa-calendar"></i> &nbsp;25 OCT, 2022</a>
                                                         </li>
-
                                                     </ul>
                                                 </div>
                                             </div>
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="parent"><a href="#" class="effect_nav">pages</a>
+                                <li class="parent"><a href="#" class="effect_nav">{% trans "pages" %}</a>
                                     <ul class="lg-submenu">
-                                        <li class="parent"><a href="{% url 'blog' %}">Blog</a>
+                                        <li class="parent"><a href="#">Blog</a>
                                             <ul class="lg-submenu">
-                                                <li><a href="{#}">Blog-Category</a>
+                                                <li><a href="{% url 'blog' %}">Blog-Category</a>
                                                 </li>
                                                 <li><a href="{% url 'blog_single' %}">Blog-Single</a>
                                                 </li>
@@ -376,7 +287,7 @@
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li><a href="{% url 'page_404' %}">404_error</a>
+                                        <a href="/404-test-url/">404_error</a>
                                         </li>
                                         <li><a href="{% url 'life_style' %}">Life-Style</a>
                                         </li>
@@ -392,200 +303,259 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="parent"><a href="{% url 'contact' %}" class="effect_nav">Contact</a>
+                              {% load static %}
+                                <style>
+                                    .language-box {
+                                        display: none;
+                                        margin-top: 10px;
+                                        border: 1px solid #ccc;
+                                        padding: 10px;
+                                        background-color: #f8f9fa;
+                                        border-radius: 5px;
+                                        width: fit-content;
+                                    }
+                                
+                                    #toggle-lang:checked ~ .language-box {
+                                        display: block;
+                                    }
+                                
+                                    .hidden-checkbox {
+                                        display: none;
+                                    }
+                                
+                                    .btn-success {
+                                        display: inline-block;
+                                        padding: 10px 30px;
+                                        background-color: #28a745;
+                                        color: white;
+                                        border: none;
+                                        cursor: pointer;
+                                        margin-top: 20px;
+                                    }
+                                
+                                    .language-switcher {
+                                        list-style: none;
+                                        padding: 0;
+                                        margin: 0;
+                                    }
+                                
+                                    .language-switcher li {
+                                        margin-bottom: 8px;
+                                    }
+                                
+                                    .language-switcher a {
+                                        text-decoration: none;
+                                        background-color: #007bff;
+                                        color: white;
+                                        padding: 6px 12px;
+                                        border-radius: 4px;
+                                        display: inline-block;
+                                        width: 100%;
+                                        text-align: center;
+                                    }
+                                
+                                    .language-switcher a:hover {
+                                        background-color: #0056b3;
+                                    }
+                                
+                                    .language-flag {
+                                        width: 20px;
+                                        height: 14px;
+                                        vertical-align: middle;
+                                        margin-right: 6px;
+                                    }
+                                </style>
+                                
+                                <li class="parent">
+                                    
+                                    <input type="checkbox" id="toggle-lang" class="hidden-checkbox" />
+                                
+                                    <label for="toggle-lang" class="btn-success">{% trans "tilar o'zgartirish" %}</label>
+                                
+                                    
+                                    <div class="language-box">
+                                        <ul class="language-switcher">
+                                            {% for language, title in languages %}
+                                                <li>
+                                                    {% get_url_tag request=request lang=language as url %}
+                                                    <a href="{{ url }}">
+                                                        {% if language == 'uz' %}
+                                                            <img src="https://t4.ftcdn.net/jpg/00/51/32/43/360_F_51324397_CqHQZ0Hnz0tTtRyx7AVwse1UoaFDeHEh.jpg"
+                                                                 alt="UZ Flag" class="language-flag">
+                                                        {% elif language == 'en' %}
+                                                            <img src="https://flagcdn.com/w40/us.png"
+                                                                 alt="US Flag" class="language-flag">
+                                                        {% elif language == 'ru' %}
+                                                            <img src="https://flagcdn.com/w40/ru.png"
+                                                                 alt="RU Flag" class="language-flag">
+                                                        {% endif %}
+                                                        {{ title }}
+                                                    </a>
+                                                </li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
-                        <!-- /dl-menuwrapper -->
                     </nav>
                 </div>
             </div>
         </div>
     </div>
-    <!-- prs navigation End -->
-
-
-
-
-
-
-    {% block content %}
-
-
-    {% endblock %}
-
-
-
-
-
-
-
-    <!--footer news Start-->
-    <div class="ne_footer_main_wrapper">
-        <div class="ne_footer_img_overlay"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <div class="ne_footer_first_section">
-                        <img src="{% static 'images/header/logo.png' %}" alt="img" class="img-responsive">
-                        <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                            <br>
-                            <br>This is Photoshop's version of Lorem Ipsum</p>
+{% block content %}
+{% endblock %}
+<div class="ne_footer_main_wrapper">
+    <div class="ne_footer_img_overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <div class="ne_footer_first_section">
+                    <img src="{% static 'images/header/logo.png' %}" alt="img" class="img-responsive">
+                    <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                        <br>
+                        <br>This is Photoshop's version of Lorem Ipsum</p>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-youtube-play"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <div class="ne_footer_second_section">
+                    <h2>POPULAR POST</h2>
+                    <div class="ns_footer_rp_main_wrapper">
+                        <div class="ns_footer_rp_img_wrapper">
+                            <img src="{% static 'images/content/footer_recent1.png' %}" alt="img">
+                        </div>
+                        <div class="ns_footer_rp_img_cont_wrapper">
+                            <h3><a href="#">These Are the 10 Color</a></h3>
+                            <p><a href="#"><i class="fa fa-calendar"></i> &nbsp;25 OCT, 2022</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ns_footer_rp_main_wrapper ns_footer_rp_main_wrapper2">
+                        <div class="ns_footer_rp_img_wrapper">
+                            <img src="{% static 'images/content/footer_recent2.png' %}" alt="img">
+                        </div>
+                        <div class="ns_footer_rp_img_cont_wrapper">
+                            <h3><a href="#">These Are the 10 Color</a></h3>
+                            <p><a href="#"><i class="fa fa-calendar"></i> &nbsp;25 OCT, 2022</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <div class="ne_footer_second_section">
+                    <h2>POPULAR TAGS</h2>
+                    <div class="ns_footer_tag_main_wrapper">
                         <ul>
-                            <li><a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+                            <li><a href="#">Business</a>
                             </li>
-                            <li><a href="https://www.youtube.com/@axiles_001"><i class="fa fa-youtube-play"></i></a>
+                            <li><a href="#">Corporate</a>
                             </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            <li><a href="#">Services</a>
                             </li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a>
+                            <li><a href="#">Customer</a>
+                            </li>
+                            <li><a href="#">Money</a>
+                            </li>
+                            <li><a href="#">Html</a>
+                            </li>
+                            <li><a href="#">Partners</a>
+                            </li>
+                            <li><a href="#">Wordpress</a>
+                            </li>
+                            <li><a href="#">Money</a>
+                            </li>
+                            <li><a href="#">Customer</a>
+                            </li>
+                            <li><a href="#">Money</a>
+                            </li>
+                            <li><a href="#">Html</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <div class="ne_footer_second_section">
-                        <h2>POPULAR POST</h2>
-                        <div class="ns_footer_rp_main_wrapper">
-                            <div class="ns_footer_rp_img_wrapper">
-                                <img src="{% static 'images/content/footer_recent1.png' %}" alt="img">
-                            </div>
-                            <div class="ns_footer_rp_img_cont_wrapper">
-                                <h3><a href="#">These Are the 10 Color</a></h3>
-                                <p><a href="#"><i class="fa fa-calendar"></i> &nbsp;25 OCT, 2022</a>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="ns_footer_rp_main_wrapper ns_footer_rp_main_wrapper2">
-                            <div class="ns_footer_rp_img_wrapper">
-                                <img src="{% static 'images/content/footer_recent2.png' %}" alt="img">
-                            </div>
-                            <div class="ns_footer_rp_img_cont_wrapper">
-                                <h3><a href="#">These Are the 10 Color</a></h3>
-                                <p><a href="#"><i class="fa fa-calendar"></i> &nbsp;25 OCT, 2022</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <div class="ne_footer_second_section">
-                        <h2>POPULAR TAGS</h2>
-                        <div class="ns_footer_tag_main_wrapper">
-                            <ul>
-                                <li><a href="#">Business</a>
-                                </li>
-                                <li><a href="#">Corporate</a>
-                                </li>
-                                <li><a href="#">Services</a>
-                                </li>
-                                <li><a href="#">Customer</a>
-                                </li>
-                                <li><a href="#">Money</a>
-                                </li>
-                                <li><a href="#">Html</a>
-                                </li>
-                                <li><a href="#">Partners</a>
-                                </li>
-                                <li><a href="#">Wordpress</a>
-                                </li>
-                                <li><a href="#">Money</a>
-                                </li>
-                                <li><a href="#">Customer</a>
-                                </li>
-                                <li><a href="#">Money</a>
-                                </li>
-                                <li><a href="#">Html</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <div class="ne_footer_second_section">
-                        <h2>POPULAR CATEGORY</h2>
-                        <div class="ns_footer_cate_main_wrapper">
-                            <ul>
-                                <li><a href="#">Make-up <span>12</span></a>
-                                </li>
-                                <li><a href="#">Weird <span>17</span></a>
-                                </li>
-                                <li><a href="#">Travel <span>22</span></a>
-                                </li>
-                                <li><a href="#">Food <span>82</span></a>
-                                </li>
-                                <li><a href="#">Audio <span>42</span></a>
-                                </li>
-                                <li><a href="#">Gadgets <span>56</span></a>
-                                </li>
-                            </ul>
-                        </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <div class="ne_footer_second_section">
+                    <h2>POPULAR CATEGORY</h2>
+                    <div class="ns_footer_cate_main_wrapper">
+                        <ul>
+                            <li><a href="#">Make-up <span>12</span></a>
+                            </li>
+                            <li><a href="#">Weird <span>17</span></a>
+                            </li>
+                            <li><a href="#">Travel <span>22</span></a>
+                            </li>
+                            <li><a href="#">Food <span>82</span></a>
+                            </li>
+                            <li><a href="#">Audio <span>42</span></a>
+                            </li>
+                            <li><a href="#">Gadgets <span>56</span></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Footer copyr Wrapper Start -->
-    <div class="cc_footer_copyr_main_wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="bottom_footer_main">
-                        <div class="bottom_footer_wrapper">
-                            <p>© Copyright 2022-23 by 365 Days - Design By <a href="#">Webstrot</a>
-                            </p>
-                        </div>
+</div>
+<div class="cc_footer_copyr_main_wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="bottom_footer_main">
+                    <div class="bottom_footer_wrapper">
+                        <p>© Copyright 2022-23 by 365 Days - Design By <a href="#">Webstrot</a>
+                        </p>
                     </div>
-                    <div class="footer_cards_warpper">
-                        <div class="footer_cards">
-                            <ul>
-                                <li><a href="#"><i class="fa fa-cc"></i></a>
-                                </li>
-                                <li><a href="#"><i class="fa fa-cc-visa"></i></a>
-                                </li>
-                                <li><a href="#"><i class="fa fa-cc-mastercard"></i></a>
-                                </li>
-                                <li><a href="#"><i class="fa fa-cc-paypal"></i></a>
-                                </li>
-                                <li><a href="#"><i class="fa fa-cc-stripe"></i></a>
-                                </li>
-                                <li><a href="#"><i class="fa fa-cc-amex"></i></a>
-                                </li>
-                                <li><a href="#"><i class="fa fa-cc-discover"></i></a>
-                                </li>
-                            </ul>
-                        </div>
+                </div>
+                <div class="footer_cards_warpper">
+                    <div class="footer_cards">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-cc"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-cc-visa"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-cc-mastercard"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-cc-paypal"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-cc-stripe"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-cc-amex"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-cc-discover"></i></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Footer copr Wrapper End -->
-    <!--footer news End-->
-    <script src="{% static 'js/jquery_min.js' %}"></script>
-    <script src="{% static 'js/modernizr.js' %}"></script>
-    <script src="{% static 'js/bootstrap.js' %}"></script>
-    <script src="{% static 'js/venobox.min.js' %}"></script>
-    <script src="{% static 'js/jquery.magnific-popup.js' %}"></script>
-    <script src="{% static 'js/owl.carousel.js' %}"></script>
-    <script src="{% static 'js/jquery.dlmenu.js' %}"></script>
-    <script src="{% static 'js/jquery.sticky.js' %}"></script>
-    <script src="{% static 'js/bit_timer.js' %}"></script>
-    <script src="{% static 'js/weather.js' %}"></script>
-    <script src="{% static 'js/custom.js' %}"></script>
-    <!--main js file end-->
+</div>
+<!-- Footer copr Wrapper End -->
+<!--footer news End-->
+<script src="{% static 'js/jquery_min.js' %}"></script>
+<script src="{% static 'js/modernizr.js' %}"></script>
+<script src="{% static 'js/bootstrap.js' %}"></script>
+<script src="{% static 'js/venobox.min.js' %}"></script>
+<script src="{% static 'js/jquery.magnific-popup.js' %}"></script>
+<script src="{% static 'js/owl.carousel.js' %}"></script>
+<script src="{% static 'js/jquery.dlmenu.js' %}"></script>
+<script src="{% static 'js/jquery.sticky.js' %}"></script>
+<script src="{% static 'js/bit_timer.js' %}"></script>
+<script src="{% static 'js/weather.js' %}"></script>
+<script src="{% static 'js/custom.js' %}"></script>
+<!--main js file end-->
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
