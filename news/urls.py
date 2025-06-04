@@ -1,7 +1,7 @@
 """
-URL configuration for news project.
+URL configuration for news2 project.
 
-The `urlpatterns` list routes URLs to views. For more information please see:
+The urlpatterns list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.1/topics/http/urls/
 Examples:
 Function views
@@ -19,25 +19,21 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 from django.conf.urls.i18n import i18n_patterns
-
-
-
+import debug_toolbar 
 
 urlpatterns = [
-    path('i18n/', include('django.conf.urls.i18n')),
-
+    path('i18', include('django.conf.urls.i18n')),
 ]
-
 
 urlpatterns += i18n_patterns(
     path('admin/', admin.site.urls),
     path('', include("app.urls")),
-    path('', include("user.urls")),
-    path('',include('utils.urls')),
-    path("ckeditor5/",include("django_ckeditor_5.urls"))
+    path('', include("dars_app.urls")),
 )
 
-
 if settings.DEBUG:
+    urlpatterns += [
+        path('debug/', include(debug_toolbar.urls)), 
+    ]
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
