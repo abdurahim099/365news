@@ -39,9 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'app',
-    'ders_app',
+    'news',
     'utils',
     'debug_toolbar',
+    'user',
 
 ]
 
@@ -57,7 +58,7 @@ MIDDLEWARE = [
     'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
-ROOT_URLCONF = 'demo5.urls'
+ROOT_URLCONF = 'news.urls'
 
 TEMPLATES = [
     {

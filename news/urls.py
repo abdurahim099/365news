@@ -28,7 +28,7 @@ urlpatterns = [
 urlpatterns += i18n_patterns(
     path('admin/', admin.site.urls),
     path('', include("app.urls")),
-    path('', include("dars_app.urls")),
+    path('', include("news.urls")),
 )
 
 if settings.DEBUG:
